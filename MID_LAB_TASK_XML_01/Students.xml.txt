@@ -2,16 +2,28 @@
 	<student sl='1'>
 		<serial_no>13</serial_no>
 		<name>John Carter</name>
-		<adm_date>25/12/2015</adm_date>
+		<adm_date>
+			<dd>25</dd>
+			<mm>12</mm>
+			<yyyy>2015</yyyy>
+		</adm_date>
 	</student>
 	<student sl='2'>
 		<serial_no>29</serial_no>
 		<name>Bob Marshal</name>
-		<adm_date>13/01/1999</adm_date>
+		<adm_date>
+			<dd>13</dd>
+			<mm>01</mm>
+			<yyyy>1999</yyyy>
+		</adm_date>
 	</student>
 	<student sl='3'>
 		<serial_no>35</serial_no>
 		<name>Clark Kent</name>
-		<adm_date>17/06/2005</adm_date>
+		<adm_date>
+			<dd>17</dd>
+			<mm>06</mm>
+			<yyyy>2005</yyyy>
+		</adm_date>
 	</student>
 </students>
