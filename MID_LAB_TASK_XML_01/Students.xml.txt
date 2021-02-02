@@ -1,0 +1,17 @@
+<students>
+	<student sl='1'>
+		<serial_no>13</serial_no>
+		<name>John Carter</name>
+		<adm_date>25/12/2015</adm_date>
+	</student>
+	<student sl='2'>
+		<serial_no>29</serial_no>
+		<name>Bob Marshal</name>
+		<adm_date>13/01/1999</adm_date>
+	</student>
+	<student sl='3'>
+		<serial_no>35</serial_no>
+		<name>Clark Kent</name>
+		<adm_date>17/06/2005</adm_date>
+	</student>
+</students>
