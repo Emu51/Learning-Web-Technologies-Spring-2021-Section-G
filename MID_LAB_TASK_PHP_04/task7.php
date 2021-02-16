@@ -1,8 +1,7 @@
   
 <?php
 
-//$i; 
-//$j;
+
 $rows = 3;
 
 for ($i = 1; $i <= $rows; ++$i) {
@@ -11,11 +10,10 @@ for ($i = 1; $i <= $rows; ++$i) {
    }
    echo "<br>";
 }
-return 0;
 
 
-?>
-<?php
+
+
     $rows = 3;
     for ($i = $rows; $i >= 1; --$i) {
        for ($j = 1; $j <= $i; ++$j) {
@@ -25,8 +23,8 @@ return 0;
     }
 
 
-?>
-<?php
+
+
 
     $j = 'A';
 
