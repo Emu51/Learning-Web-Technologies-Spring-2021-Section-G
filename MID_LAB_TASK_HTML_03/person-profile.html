@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>person</title>
+</head>
+<body>
+	<table border="1" width="50%" align="left">
+		<th colspan="2"><h1>Person Profile</h1></th>
+<tr>
+					<td>Name:<br></td>
+					<td colspan="2"> 
+					<input type="text" name="username" value="" placeholder="enter your username" />
+					</td>
+				</tr>
+				<tr>
+					<td>Email: <br></td>
+					
+					<td colspan="2"> <input type="email" name="email" placeholder="Enter your email" value="" /> </td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>  
+						<input type="radio" name="gender"> Male
+						<input type="radio" name="gender"> Female
+						<input type="radio" name="gender"> Other 
+					</td>
+				</tr>
+								<tr>
+					<td>Enter Date : </td>
+					<td> <input type="date" name="dob" value="" /> </td>
+				</tr>
+								<tr>
+									<td>Blood type</td>
+					
+					<td>  
+						<select name="type">
+							<option value="">A+</option>
+							<option value="">A-</option>
+							<option value="">B+</option>
+							<option value="" >B-</option>
+							<option value="" >O+</option>
+							<option value="" >O-</option>
+							<option value="" >AB+</option>
+							<option value="" >AB-</option>
+						</select>
+					</td>
+				</tr>
+								<tr>
+									<td>Enter Degree</td>
+					
+					<td>  
+						<input type="checkbox" name="iteam[]" > SSC 
+						<input type="checkbox" name="iteam[]" > HSC 
+						<input type="checkbox" name="iteam[]" > BSc
+					</td>
+				</tr>
+								<tr>
+					<td>Picture :  </td>
+					<td>  
+						<input type="file" name="image" value="">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" height="50px"></td>
+					
+				</tr>
+
+		<tr align="right" >
+			<td colspan="3" height="50px">
+				<input type="submit" name="click" value="Submit"> 
+						<input type="reset" name="click" value="reset">	
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
