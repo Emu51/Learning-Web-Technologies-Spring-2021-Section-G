@@ -24,9 +24,9 @@
 		<fieldset>
 			<legend>Change Password</legend>
 			Current Password :	<input type="password" name="password" value=""> <br>
-			New Password : 	<input type="password" name="new_password1" value=""> <br>
-							<input type="password" name="new_password2" value=""> <br>
-						<input type="submit" name="submit" value="Submit">
+			New Password : 	    <input type="password" name="new_password1" value=""> <br>
+								<input type="password" name="new_password2" value=""> <br>
+						    	<input type="submit" name="submit" value="Submit"> <br>
 		</fieldset>
 	</form>
 </body>
