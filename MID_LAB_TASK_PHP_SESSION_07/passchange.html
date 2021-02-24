@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Table Example</title>
+	<title> Password Change</title>
 </head>
 <body>
 	<table border="1" width="50%" align="center">
@@ -16,25 +16,25 @@
 			</p> 			
 			</td>
 		</tr>
-		<tr align="center" height="300px">
-			<td width="50%">
-				<form method="POST" action="logcheck.php" >
+		<tr align="left" height="300px">
+			<td>
+				<form method="POST" action="passchange.php" >
 		<fieldset width="50%">
 			<legend width="50%">Login</legend>
 			<table align="center" width="50%">
 				<tr>
-					<td> Username : <input type="text" name="myname" value=""> </td>
+					<td>Your email :<input type="email" name="email" value=""> </td>
 				</tr>
 				<tr>
-					<td>password : <input type="password" name="password" value=""></td>
+					<td> New password :<input type="password" name="newpassword" value=""></td>
 				</tr>
 				<tr><td><input type="submit" name="submit" value="Submit"><br></td></tr>
-				<tr><td><input type="checkbox" name="item[]" > Remember Me<br></td></tr>
-				<tr><td> <a href="passchange.html"> Forgot Password ?  </td> </tr>
+
 			</table>
 			
 		</fieldset>
 	</form>
+
 
 			</td>
 			
