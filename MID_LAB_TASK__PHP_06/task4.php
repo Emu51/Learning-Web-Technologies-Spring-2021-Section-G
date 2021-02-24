@@ -6,6 +6,8 @@ if(isset($_POST['submit'])){
 		$email=$_POST['email'];
 		$password1	=  $_POST[ 'password1'];
 		$password2  =  $_POST['password2'];
+		$gender = $_POST["gender"];
+		$dob = $_POST["dob"];
 
 		if($name == ""){
 			echo "Enter a Name";
@@ -39,6 +41,12 @@ if(isset($_POST['submit'])){
 		else if($password1 != $password2){
 			echo "Passwords did not match";
 		}
+		else if($gender == ""){
+			echo "Enter Your Gender";
+		}
+		else if($dob == ""){
+			echo "Enter a Date of Birth";
+		}
 		else {
 			echo "Registration Sucessfull !";
 		}
@@ -53,7 +61,7 @@ if(isset($_POST['submit'])){
 <body>
 	<form method="POST" action="#">
 		<fieldset>
-			<legend>Change Password</legend>
+			<legend>Registration</legend>
 			<table border="0" width="50%" align="left">
 		<th colspan="2"><h1>Person Profile</h1></th>
 <tr>
@@ -97,7 +105,7 @@ if(isset($_POST['submit'])){
 					</td>
 				</tr>
 								<tr>
-					<td>Enter Date : </td>
+					<td>Enter Date of birth : </td>
 					<td> <input type="date" name="dob" value="" /> </td>
 				</tr>
 								
