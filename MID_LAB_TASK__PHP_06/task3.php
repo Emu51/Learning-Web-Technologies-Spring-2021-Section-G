@@ -1,9 +1,8 @@
 <?php
 if (isset($_POST["submit"])) {
     
-    $fileinfo = @getimagesize($_FILES["file-input"]["tmp_name"]);
-    $width = $fileinfo[0];
-    $height = $fileinfo[1];
+    $fileinfo = $_FILES["file"]["tmp_name"];
+
     
     $allowed_image_extension = array(
         "png",
@@ -12,47 +11,24 @@ if (isset($_POST["submit"])) {
     );
     
     
-    $file_extension = pathinfo($_FILES["file-input"]["name"], PATHINFO_EXTENSION);
+    $file_extension =$_FILES["file"]["type"];
     
     
-    if (! file_exists($_FILES["file-input"]["tmp_name"])) {
-        $response = array(
-            "type" => "error",
-            "message" => "Choose image file to upload."
-        );
+    if (! file_exists($_FILES["file"]["tmp_name"])) {
+        echo "Please upload a file";
+        ;
     }    
     else if (! in_array($file_extension, $allowed_image_extension)) {
-        $response = array(
-            "type" => "error",
-            "message" => "Upload valiid images. Only PNG and JPEG are allowed."
-        );
-        echo $result;
+                echo "the file is in correct format";
+        
     }    
-    else if (($_FILES["file-input"]["size"] > 2000000)) {
-        $response = array(
-            "type" => "error",
-            "message" => "Image size exceeds 2MB"
-        );
-    }    
-    else if ($width > "300" || $height > "200") {
-        $response = array(
-            "type" => "error",
-            "message" => "Image dimension should be within 300X200"
-        );
-    } else {
-        $target = "image/" . basename($_FILES["file-input"]["name"]);
-        if (move_uploaded_file($_FILES["file-input"]["tmp_name"], $target)) {
-            $response = array(
-                "type" => "success",
-                "message" => "Image uploaded successfully."
-            );
-        } else {
-            $response = array(
-                "type" => "error",
-                "message" => "Problem in uploading image files."
-            );
-        }
+    else if (($_FILES["file"]["size"] > 4000000)) {
+                echo "upload a picture less than 4mb size";;
     }
+    else {
+        echo "picture upload successfull";
+    }    
+
 }
 ?>
   
@@ -70,7 +46,7 @@ if (isset($_POST["submit"])) {
 
 
                 <tr>
-                    <td>Picture :  </td>
+                    <td>Picture : <img src="user.png"> </td>
                     <td>  
                         <input type="file" name="image" value="">
                     </td>
