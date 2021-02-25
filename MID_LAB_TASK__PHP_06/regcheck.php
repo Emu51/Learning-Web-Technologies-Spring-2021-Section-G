@@ -32,7 +32,8 @@ if(isset($_POST['submit'])){
 		else if($password2==""){
 			echo "Re-type the password to confirm your password";
 		}
-		else if ( $password1=="@" ||$password1=="#" || $password1=="$" ||$password1=="%" and strlen($password1)<8) 
+		else if 
+			( $password1=="@" ||$password1=="#" || $password1=="$" ||$password1=="%" and strlen($password1)<8) 
 		{
 
 			echo "\n Invalid password";
