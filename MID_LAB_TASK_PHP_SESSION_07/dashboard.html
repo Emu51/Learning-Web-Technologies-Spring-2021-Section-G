@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Table Example</title>
+</head>
+<body>
+	<table border="1" width="50%" align="center">
+		<tr align="center">
+			<td  colspan="3" width="100px" align="Left">
+				<img src="logo.png">
+			
+			<p align="Right">
+				<a href="home.html"> Home</a> | 			
+				<a href="registration.html"> Registration</a> | 			
+				<a href="login.html" >Login</a> | 			
+			</p> 			
+			</td>
+		</tr>
+		<tr align="left" height="300px">
+			<td>
+				<h2>Account</h2>
+				<ul>
+					<li><a href="dashboard.html"> Dashboard</a></li>
+					<li><a href="view.html"> View Profile</a></li>
+					<li><a href="editprofile.html"> Edit Profile</a></li>
+					<li><a href="changephoto.html"> Change Profile Picture</a></li>
+					<li><a href="changepass.html"> Change Passowrd</a></li>
+					<li><a href="logout.html"> Logout </a></li>
+				</ul>
+
+			</td>
+			<td colspan="2">
+				<h1>Welcome , <?php echo $_SESSION['username']; ?> </h1>
+
+			</td>
+			
+		</tr>
+	
+		<tr align="center" >
+			<td colspan="3" height="50px">
+				Copyright@2021
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
