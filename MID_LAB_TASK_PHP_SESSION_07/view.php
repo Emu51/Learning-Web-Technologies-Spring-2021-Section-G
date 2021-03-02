@@ -39,7 +39,7 @@
 						<td></td>
 					</tr>
 					<tr>
-						<td>Email</td>
+						<td>Email :</td>
 						<td><?php $_SESSION['email'] ?></td>
 						<td></td>
 					</tr>
