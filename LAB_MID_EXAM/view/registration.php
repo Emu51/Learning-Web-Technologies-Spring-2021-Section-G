@@ -1,25 +1,19 @@
-
-<form method="POST" action="regcheck.php">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<center>
+		<form method="POST" action="regcheck.php">
 		<fieldset>
 			<legend>Registration</legend>
 			<table border="0" width="50%" align="center">
 		
 <tr>
-					<td>Name:<br></td>
+					<td>ID :<br></td>
 					<td colspan="2"> 
 					<input type="text" name="name" value="" placeholder="enter your name" />
-					</td>
-				</tr>
-				<tr>
-					<td>Email: <br></td>
-					
-					<td colspan="2"> <input type="email" name="email" placeholder="Enter your email" value="" /> </td>
-				</tr>
-				
-					<tr>
-					<td>User Name<br></td>
-					<td colspan="2"> 
-					<input type="text" name="username" value="" placeholder="enter your username" />
 					</td>
 				</tr>
 				<tr>
@@ -31,23 +25,32 @@
 						<input type="password" name="password1" value="" placeholder="enter your Password"> <br>
 					</td>
 				</tr>
-				<tr><td>
+				
+					<tr>
+					<td>
 						Confirm Password :	 <br>
 					</td>
 					<td><input type="password" name="password2" value="" placeholder="re-enter your password"><br></td>
 				</tr>
 				<tr>
-					<td>Gender</td>
-					<td>  
-						<input type="radio" name="gender"> Male
-						<input type="radio" name="gender"> Female
-						<input type="radio" name="gender"> Other 
+					<td>
+						Name :
+						 
+					</td>
+					<td>
+						<input type="text" name="name" value="" placeholder="enter your Name"> <br>
 					</td>
 				</tr>
-								<tr>
-					<td>Enter Date : </td>
-					<td> <input type="date" name="dob" value="" /> </td>
+				
+				<tr>
+					<td>User Type</td>
+					<td>  
+						<input type="radio" name="admin"> Admin
+						<input type="radio" name="user"> User
+						
+					</td>
 				</tr>
+								
 								
 								
 
@@ -65,3 +68,7 @@
 	</table>
 		</fieldset>
 	</form>
+
+	</center>
+</body>	
+</html>
