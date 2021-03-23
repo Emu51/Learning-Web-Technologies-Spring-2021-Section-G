@@ -15,7 +15,7 @@
                 'profit'=>$profit,
                 
             ];
-            $status= insertProduct($product);
+            $status= update_product($product);
             if($status)
             {
                 header('location: ../View/display.php');
@@ -26,5 +26,3 @@
             
             
         }
-
-?>
