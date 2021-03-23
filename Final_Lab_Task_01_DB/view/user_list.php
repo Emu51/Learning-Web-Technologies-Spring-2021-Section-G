@@ -9,7 +9,7 @@
 	<br>
 	
 	<h1>User list</h1>
-	$user = getAllUser();
+	
 
 	echo "<table border=1>
 			<tr>
@@ -19,7 +19,7 @@
 				<td>Type</td>
 			</tr>";
 
-	while ($row = mysqli_fetch_assoc($result)) {
+	while ($row = getAllUser()) {
 
 		echo 	"<tr>
 					<td>{$row['id']}</td>
