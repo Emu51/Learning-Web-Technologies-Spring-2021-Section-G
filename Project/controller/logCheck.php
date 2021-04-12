@@ -1,20 +1,25 @@
 <?php
 
 	session_start();
+	require_once('../model/user_list.php');
 
 	if(isset($_POST['submit'])){
 
-		$username = $_POST['username'];
+		$username = $_POST['name'];
 		$password = $_POST['password'];
 
 		if($username == "" || $password == ""){
 			echo "null input...";
 		}else{
 
-			$user = $_SESSION['current_user'];
+			
+			$status = validateUser($username, $password);
 
-			if($user['username'] == $username && $user['password'] == $password){
+			if($status){
 				$_SESSION['flag'] = true;
+				$_SESSION['name'] = $username;
+				$_SESSION['password'] = $password;
+
 				header('location: ../view/home.php');
 			}else{
 				echo "invalid user...";

@@ -16,6 +16,7 @@
                 
             ];
             $status= insertProduct($product);
+            echo "$status";
             if($status)
             {
                 header('location: ../View/display.php');
