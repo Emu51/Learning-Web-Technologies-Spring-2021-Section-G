@@ -1,24 +1,29 @@
 <?php
         require_once('../Model/db.php');
-        require_once('../Model/product.php');
-        if(isset($_POST["submit"]))
+        require_once('../Model/user_list.php');
+        if(isset($_POST["update"]))
         {
-            $username = $_POST['username'];
-			$password = $_POST['password'];
-			$repass = $_POST['repass'];
-			$email = $_POST['email'];
-            $user = 
-            [
-                'username'=>$username ,
+
+        $id1 = $_POST['id'];
+        $username = $_POST['name'];
+		$password = $_POST['password'];
+		$email = $_POST['email'];
+		$type = $_POST['type'];
+		$phone = $_POST['phone'];
+
+            $user = [
+                'name'=>$username ,
                 'password'=>$password,
-                'repass'=>$repass,
+                
                 'email'=>$email,
+                'type'=>$email,
+                'Phone'=>$email
                 
             ];
-            $status= update_user($user);
+            $status= updateUser($user,$id1);
             if($status)
             {
-                header('location: ../View/userlist.php');
+                header('location: ../View/user_list.php');
             }
             else{
                 echo "error..try again";

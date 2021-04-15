@@ -55,7 +55,7 @@ function getAllUser(){
 
 function updateUser($user,$id1){
 	$conn = getConnection();
-	$sql = "update users set username='{$user['name']}', password='{$user['password']}', email='{$user['email']}',type='{$user['phone']}', type='{$user['type']}' where id='{$id1}'";
+	$sql = "update users set name='{$user['name']}', password='{$user['password']}', email='{$user['email']}',type='{$user['type']}', Phone='{$user['Phone']}' where id='{$id1}'";
 	$result = mysqli_query($conn, $sql);
 	
 	if($result){
