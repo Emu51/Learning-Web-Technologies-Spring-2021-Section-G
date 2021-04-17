@@ -1,8 +1,8 @@
 <?php
 	$title = "Create Page";
 	include('header.php');
+	
 ?>
-
 <form method="post" action="../controller/regCheck.php">
 	<fieldset>
 		<legend>Create User</legend>
