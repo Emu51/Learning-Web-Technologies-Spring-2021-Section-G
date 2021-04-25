@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<script type="text/javascript" src="RegScript.js"></script>
+<body bgcolor="skyblue">
+<center>
+<img src="logo.png" width="150px" height="150px" alt="LOGO">
+<body>
+<h1 id='myid'>Sign Up Page</h1>
+    <form  name="myForm" method="post" action="../Controller/SignUpCheck.php" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" value=""></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" value=""></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="repass" value=""></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" value=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" value="Submit">
+                        <a href="LogIn.html">Login</a>
+                    </td>
+                </tr>
+            </table>
+    </form>
+    </center>
+</body>
+</html>

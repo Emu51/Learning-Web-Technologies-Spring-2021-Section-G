@@ -3,10 +3,11 @@
 	include('header.php');
 	
 ?>
+<link rel="stylesheet" type="text/css" href="style.css">
 <form method="post" action="../controller/regCheck.php">
 	<fieldset>
 		<legend>Create User</legend>
-		<table>
+		<table id="div">
 			<tr>
 				<td>Username</td>
 				<td><input type="text" name="name" value=""></td>
